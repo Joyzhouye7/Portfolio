@@ -6,8 +6,9 @@
 }
 
 body {
-  background: #ffffff;
-  color: #111;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #ffe6f0 0%, #fff7fb 40%, #ffffff 100%);
+  color: #1a1a1a;
   line-height: 1.6;
 }
 
