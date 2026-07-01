@@ -1,67 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Votlu</title>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-    <link rel="stylesheet" href="./style.css">
-</head>
+body {
+  background: #ffffff;
+  color: #111;
+  line-height: 1.6;
+}
 
-<body>
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  border-bottom: 1px solid #eee;
+}
 
-    <!-- NAV -->
-    <header class="nav">
-        <div class="logo">VOTLU</div>
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Markets</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+}
 
-    <!-- HERO -->
-    <section class="hero">
-        <h1>Move Better.<br>Live Better.</h1>
-        <p>Premium activewear & wellness essentials for modern lifestyles.</p>
-        <button>Shop Now</button>
-    </section>
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
 
-    <!-- PRODUCTS -->
-    <section class="products">
-        <h2>Featured Products</h2>
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
 
-        <div class="grid">
+.hero p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
 
-            <div class="card">
-                <h3>Yoga Leggings</h3>
-                <p>High-waisted seamless design</p>
-                <span>$49</span>
-            </div>
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
 
-            <div class="card">
-                <h3>Sports Bra</h3>
-                <p>Comfort + support</p>
-                <span>$39</span>
-            </div>
+.btn {
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+}
 
-            <div class="card">
-                <h3>Activated Charcoal</h3>
-                <p>Purification essentials</p>
-                <span>$29</span>
-            </div>
+.primary {
+  background: black;
+  color: white;
+}
 
-        </div>
-    </section>
+.secondary {
+  border: 1px solid black;
+  color: black;
+}
 
-    <!-- CONTACT -->
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: joyzhouye7@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/zhouye1376</p>
-    </section>
+/* SECTIONS */
+.section {
+  padding: 80px 60px;
+  text-align: center;
+}
 
-</body>
-</html>
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.sub {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.img-placeholder {
+  width: 100%;
+  height: 180px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* ABOUT */
+.dark {
+  background: #111;
+  color: white;
+}
+
+.about-text {
+  max-width: 700px;
+  margin: auto;
+  color: #ddd;
+}
+
+/* CONTACT */
+.contact-box {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.contact-box a {
+  color: black;
+}
+
+/* FOOTER */
+footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 12px;
+  border-top: 1px solid #eee;
+}
