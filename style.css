@@ -217,3 +217,8 @@ body::after {
 .product-img:hover {
   transform: scale(1.03);
 }
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
